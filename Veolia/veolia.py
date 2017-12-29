@@ -15,16 +15,16 @@ from xlrd.sheet import ctype_text
 
 
 # domoticz server & port information
-domoticzserver = "192.168.10.37:8080"
+domoticzserver = "192.168.10.x:8080"
 
 # domoticz IDX
 Idx="110"
 
 #Veolia Login
-Vlogin="klarsonneur@gmail.com"
+Vlogin="@gmail.com"
 
 #Veolia password
-Vpassword="RebOOt007"
+Vpassword=""
 
 # Logger
 def Logger(pMessage):
