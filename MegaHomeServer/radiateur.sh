@@ -14,26 +14,34 @@ if [ -n "$1" ]
    then
 	if [ "$3" = "stop" ]
 	 then
-		  wget http://192.168.10.177/a?command=$2off tmp
-		  wget http://192.168.10.177/a?command=$1on tmp
+		  wget http://192.168.10.177/a?command=$2off 
+		  rm a?command=$2off
+		  wget http://192.168.10.177/a?command=$1on 
+		  rm a?command=$1on
 		  exit 
 	fi
 	if [ "$3" = "confort" ]
 	 then
-		  wget http://192.168.10.177/a?command=$1on tmp
-		  wget http://192.168.10.177/a?command=$2on tmp
+		  wget http://192.168.10.177/a?command=$1on 
+		  rm a?command=$1on
+		  wget http://192.168.10.177/a?command=$2on 
+		  rm a?command=$2on
 		  exit 
 	fi
 	if [ "$3" = "gel" ]
 	 then
-		  wget http://192.168.10.177/a?command=$1off tmp
-		  wget http://192.168.10.177/a?command=$2on tmp
+		  wget http://192.168.10.177/a?command=$1off 
+		  rm a?command=$1off
+		  wget http://192.168.10.177/a?command=$2on 
+		  rm a?command=$2on
 		  exit 
 	fi
 	if [ "$3" = "eco" ]
 	 then
-		  wget http://192.168.10.177/a?command=$1off tmp
-		  wget http://192.168.10.177/a?command=$2off tmp
+		  wget http://192.168.10.177/a?command=$1off 
+		  rm a?command=$1off
+		  wget http://192.168.10.177/a?command=$2off 
+		  rm a?command=$2off
 		  exit 
 	fi
   fi
